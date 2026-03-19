@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Веб-розробка",
+    "category": "development",
+    "description": "Створення сучасних веб-сайтів та застосунків",
+    "icon": "💻"
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Дизайн",
+    "category": "design",
+    "description": "Проєктування зручних інтерфейсів",
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "title": "Консультації",
+    "category": "consulting",
+    "description": "Технічні консультації з веб-технологій",
+    "icon": "💡"
+  },
+  {
+    "id": 4,
+    "title": "Навчання",
+    "category": "education",
+    "description": "Курси з HTML, CSS та JavaScript",
+    "icon": "📚"
+  }
+]
