@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="pages/about.html">Про мене</a></li>
+                    <li><a href="pages/contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Ласкаво просимо на мій сайт</h1>
+                <p class="lead">Це багатосторінковий сайт, створений для демонстрації навичок HTML та CSS</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Про проєкт</h2>
+                <p>Цей сайт створено в рамках практичної роботи з веб-технологій. Він демонструє основні можливості HTML5 та CSS3, включаючи адаптивний дизайн, флексбокс-верстку та оформлення різних елементів інтерфейсу.</p>
+                
+                <h3>Основні можливості</h3>
+                <ul class="feature-list">
+                    <li>Адаптивний дизайн для різних пристроїв</li>
+                    <li>Сучасна типографіка та кольорова палітра</li>
+                    <li>Інтерактивні елементи навігації</li>
+                    <li>Оформлені таблиці та форми</li>
+                    <li>Підтримка мультимедійного контенту</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Галерея</h2>
+                <p class="section-subtitle">Деякі моменти з мого життя та проєктів</p>
+                <div class="photo-gallery">
+                    <!-- modal targets -->
+                    <a href="assets/img/image.png" class="gallery-item" data-modal-target="true">
+                        <img src="assets/img/image.png" alt="Фото 1">
+                        <div class="gallery-overlay">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="assets/img/image copy.png" class="gallery-item" data-modal-target="true">
+                        <img src="assets/img/image copy.png" alt="Фото 2">
+                        <div class="gallery-overlay">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>FAQ</h2>
+                <p class="section-subtitle">Короткі відповіді на найчастіші запитання</p>
+                <div class="faq-list">
+                    <article class="faq-item">
+                        <button class="faq-header" type="button" aria-expanded="true" aria-controls="faq-1">
+                            Що реалізовано в межах практичної?
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-content" id="faq-1">
+                            Динамічну навігацію, мобільне меню, перемикач теми, модальне вікно, фільтри карток,
+                            кнопку «Вгору» та покращену форму з валідацією й збереженням чернетки.
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-header" type="button" aria-expanded="false" aria-controls="faq-2">
+                            Де зберігаються налаштування користувача?
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-content" id="faq-2" hidden>
+                            У localStorage: тема сайту, чернетка контактної форми та обране для карток послуг.
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-header" type="button" aria-expanded="false" aria-controls="faq-3">
+                            Як запустити проєкт без помилки fetch?
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-content" id="faq-3" hidden>
+                            Відкрийте проєкт через локальний сервер (наприклад, Live Server), а не напряму через file://.
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Статистика проєкту</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Показник</th>
+                            <th>Значення</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Сторінок у мінісайті</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>JS-модулів</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Інтерактивних механік</td>
+                            <td>10+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="controls-bar">
+                    <div class="filter-group">
+                        <button class="filter-btn is-active" data-filter="all">Усі</button>
+                        <button class="filter-btn" data-filter="development">Розробка</button>
+                        <button class="filter-btn" data-filter="design">Дизайн</button>
+                        <button class="filter-btn" data-filter="marketing">Маркетинг</button>
+                    </div>
+                    <select id="sort-options">
+                        <option value="date-new">Нові</option>
+                        <option value="price-asc">Ціна (зростання)</option>
+                        <option value="price-desc">Ціна (спадання)</option>
+                    </select>
+                </div>
+                <div id="services-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span class="js-current-year">2026</span> Практична робота з JavaScript. Усі права захищені.</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/ui.js" defer></script>
+</body>
+</html>
+

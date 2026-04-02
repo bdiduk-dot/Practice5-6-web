@@ -1,0 +1,5 @@
+﻿[
+  {"id": 1, "title": "Web Development", "category": "development", "price": 500, "date": "2026-01-15", "description": "Створення сучасних HTML/CSS/JS сайтів.", "image": "assets/img/dev.png"},
+  {"id": 2, "title": "UI/UX Design", "category": "design", "price": 300, "date": "2026-02-10", "description": "роєктування зручних інтерфейсів.", "image": "assets/img/design.png"},
+  {"id": 3, "title": "SEO Optimization", "category": "marketing", "price": 200, "date": "2026-03-05", "description": "росування в пошукових системах.", "image": "assets/img/seo.png"}
+]

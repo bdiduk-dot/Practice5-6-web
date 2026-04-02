@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="about.html">Про мене</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Давайте поспілкуємось</h1>
+                <p class="lead">Маєте питання або пропозицію? Я завжди відкритий до нових ідей</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2>Контактна інформація</h2>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>b.diduk@e-u.edu.ua</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Телефон</h3>
+                                <p>+380 99 742 82 85</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Локація</h3>
+                                <p>Kyiv, Ukraine</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Час відповіді</h3>
+                                <p>Зазвичай протягом 24 годин</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <form class="contact-form" id="contact-form">
+                            <h2>Напишіть мені</h2>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Ім'я *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Ваше ім'я">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Тема</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Оберіть тему</option>
+                                    <option value="question">Загальне питання</option>
+                                    <option value="cooperation">Співпраця</option>
+                                    <option value="feedback">Відгук про проєкт</option>
+                                    <option value="other">Інше</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Повідомлення *</label>
+                                <textarea id="message" name="message" rows="5" maxlength="500" required placeholder="Розкажіть детальніше..." aria-describedby="char-count"></textarea>
+                                <div id="char-count" class="char-count" aria-live="polite"></div>
+                            </div>
+
+                            <fieldset class="form-group">
+                                <legend>Бажаний спосіб зв'язку</legend>
+                                <div class="radio-group">
+                                    <label>
+                                        <input type="radio" name="contact-method" value="email" checked>
+                                        Email
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="contact-method" value="phone">
+                                        Телефон
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="contact-method" value="any">
+                                        Будь-який
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <div class="form-group checkbox-group">
+                                <label>
+                                    <input type="checkbox" name="agree" value="yes" required>
+                                    Я погоджуюся з обробкою персональних даних *
+                                </label>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary">Відправити</button>
+                                <button type="button" class="btn" id="clear-draft">Очистити чернетку</button>
+                            </div>
+                        </form>
+                        <div id="form-status" class="form-status" aria-live="polite"></div>
+                        <div id="form-result" class="form-result" aria-live="polite"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span class="js-current-year">2026</span> Практична робота з JavaScript. Усі права захищені.</p>
+        </div>
+    </footer>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/ui.js" defer></script>
+    <script src="../js/contact.js" defer></script>
+</body>
+</html>
