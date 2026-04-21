@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог послуг</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="about.html">Про мене</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="favorites.html">Обране</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Каталог послуг</h2>
+                <input type="text" id="search-input" class="search-bar" placeholder="Пошук за назвою або описом..." aria-label="Пошук">
+                
+                <div class="controls-bar">
+                    <div class="filter-group" id="catalog-filters">
+                        <button class="filter-btn is-active" data-filter="all">Усі</button>
+                        <button class="filter-btn" data-filter="development">Розробка</button>
+                        <button class="filter-btn" data-filter="design">Дизайн</button>
+                        <button class="filter-btn" data-filter="marketing">Маркетинг</button>
+                    </div>
+                    <select id="sort-options" aria-label="Сортування">
+                        <option value="date-new">Нові</option>
+                        <option value="price-asc">Ціна (зростання)</option>
+                        <option value="price-desc">Ціна (спадання)</option>
+                        <option value="title-asc">За назвою (А-Я)</option>
+                    </select>
+                </div>
+                
+                <div id="catalog-container" data-catalog="true">
+                    <!-- Cards will be populated here -->
+                </div>
+                
+                <div class="pagination">
+                    <button type="button" class="btn-load-more" id="btn-load-more" hidden>Показати ще</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span class="js-current-year">2026</span> Практична робота з JavaScript. Усі права захищені.</p>
+        </div>
+    </footer>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/ui.js" defer></script>
+    <script src="../js/catalog.js" defer></script>
+</body>
+</html>

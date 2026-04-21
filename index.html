@@ -15,6 +15,8 @@
                     <li><a href="index.html">Головна</a></li>
                     <li><a href="pages/about.html">Про мене</a></li>
                     <li><a href="pages/contact.html">Контакти</a></li>
+                    <li><a href="pages/catalog.html">Каталог</a></li>
+                    <li><a href="pages/favorites.html">Обране</a></li>
                 </ul>
             </nav>
         </div>
@@ -138,18 +140,9 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="controls-bar">
-                    <div class="filter-group">
-                        <button class="filter-btn is-active" data-filter="all">Усі</button>
-                        <button class="filter-btn" data-filter="development">Розробка</button>
-                        <button class="filter-btn" data-filter="design">Дизайн</button>
-                        <button class="filter-btn" data-filter="marketing">Маркетинг</button>
-                    </div>
-                    <select id="sort-options">
-                        <option value="date-new">Нові</option>
-                        <option value="price-asc">Ціна (зростання)</option>
-                        <option value="price-desc">Ціна (спадання)</option>
-                    </select>
+                
+                <div class="catalog-cta">
+                    <a href="pages/catalog.html" class="btn catalog-link-btn">Перейти до повного каталогу</a>
                 </div>
                 <div id="services-container"></div>
             </div>
@@ -163,7 +156,6 @@
     </footer>
     
     <script src="js/main.js" defer></script>
-    <script src="js/ui.js" defer></script>
     <script src="js/ui.js" defer></script>
 </body>
 </html>

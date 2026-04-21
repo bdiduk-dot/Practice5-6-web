@@ -58,4 +58,3 @@ HTML5, CSS3, JavaScript (ES6+), localStorage, FormData, Fetch API.
 
 Богдан Дiдик
 
-
