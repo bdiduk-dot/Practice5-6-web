@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg-color: #ffffff;
   --text-color: #1f2937;
   --muted-color: #6b7280;
@@ -37,9 +37,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.5;
   background: var(--bg-color);
   color: var(--text-color);
@@ -1002,3 +1004,18 @@ body.theme-dark .success-box {
     background: transparent;
   }
 }
+
+#catalog-container, #favorites-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.filterable-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.filterable-card > p {
+  flex-grow: 1;
+}
+

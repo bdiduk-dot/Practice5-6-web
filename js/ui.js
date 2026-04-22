@@ -1,7 +1,9 @@
-﻿function initUI() {
+function initUI() {
   initAccordion();
   initModal();
   initServicesCatalog();
+  initFavBadge();
+  initActiveNav();
 }
 
 function initAccordion() {
@@ -287,7 +289,7 @@ function persistFavoriteSet(favorites) {
   try {
     localStorage.setItem('favoritesList', JSON.stringify([...favorites]));
   } catch (_error) {
-    // Ignore storage errors.
+    // Ігноруємо помилки доступу до сховища
   }
 }
 
@@ -303,3 +305,53 @@ function escapeHtml(value) {
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#39;');
 }
+
+function initFavBadge() {
+  window.updateFavBadge = function() {
+    try {
+      const raw = localStorage.getItem('catalogFavorites_v3');
+      const parsed = raw ? JSON.parse(raw) : [];
+      const count = Array.isArray(parsed) ? parsed.length : 0;
+      
+      document.querySelectorAll('.fav-badge').forEach(badge => {
+        // Стилізація бейджика у вигляді суперскрипта
+        badge.parentElement.style.position = 'relative';
+        badge.style.position = 'absolute';
+        badge.style.top = '-8px';
+        badge.style.right = '-15px';
+        badge.style.background = 'var(--danger-color, #ef4444)';
+        badge.style.color = 'white';
+        badge.style.fontSize = '10px';
+        badge.style.padding = '2px 5px';
+        badge.style.borderRadius = '10px';
+        badge.style.lineHeight = '1';
+        badge.style.fontWeight = 'bold';
+
+        if (count > 0) {
+          badge.textContent = count;
+          badge.style.display = 'inline-block';
+        } else {
+          badge.style.display = 'none';
+        }
+      });
+    } catch(e) {}
+  };
+  window.updateFavBadge();
+}
+
+function initActiveNav() {
+  const currentUrl = window.location.href.split('#')[0].split('?')[0];
+  const navLinks = document.querySelectorAll('.nav-list a');
+  
+  navLinks.forEach(link => {
+    // Точний збіг або головна сторінка
+    if (link.href === currentUrl || (currentUrl.endsWith('/') && link.href.endsWith('index.html'))) {
+      link.classList.add('is-active');
+      link.setAttribute('aria-current', 'page');
+    } else {
+      link.classList.remove('is-active');
+      link.removeAttribute('aria-current');
+    }
+  });
+}
+

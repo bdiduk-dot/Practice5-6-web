@@ -1,0 +1,11 @@
+{
+  "name": "practice-11-12-crud",
+  "version": "1.0.0",
+  "description": "Frontend REST API catalog app",
+  "scripts": {
+    "server": "json-server --watch db.json --port 3005"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

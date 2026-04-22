@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Створення корпоративного сайту",
+      "category": "development",
+      "price": 1200,
+      "date": "2026-04-10",
+      "status": "published",
+      "description": "Повноцінний корпоративний сайт з адмін-панеллю, інтеграцією CRM та сучасним дизайном.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Редизайн інтернет-магазину",
+      "category": "design",
+      "price": 850,
+      "date": "2026-04-12",
+      "status": "published",
+      "description": "Оновлення візуального стилю та покращення UX для підвищення конверсії інтернет-магазину.",
+      "image": "https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 3,
+      "title": "SEO оптимізація під ключ",
+      "category": "marketing",
+      "price": 600,
+      "date": "2026-03-25",
+      "status": "published",
+      "description": "Комплексна робота: технічний аудит, збір семантики та оптимізація контенту для Google.",
+      "image": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 4,
+      "title": "Розробка лендінгу (Landing Page)",
+      "category": "development",
+      "price": 400,
+      "date": "2026-04-05",
+      "status": "published",
+      "description": "Швидкий та конверсійний односторінковий сайт для запуску реклами нового продукту.",
+      "image": "https://images.unsplash.com/photo-1472437774355-71ab6752b434?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 5,
+      "title": "UX аудит та прототипування",
+      "category": "design",
+      "price": 300,
+      "date": "2026-02-18",
+      "status": "published",
+      "description": "Аналіз існуючого інтерфейсу, виявлення проблем та створення інтерактивних прототипів.",
+      "image": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 6,
+      "title": "Налаштування таргетованої реклами",
+      "category": "marketing",
+      "price": 450,
+      "date": "2026-03-10",
+      "status": "published",
+      "description": "Створення та ведення рекламних кампаній у Facebook/Instagram з гарантованим результатом.",
+      "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 7,
+      "title": "Створення мобільного додатку (React Native)",
+      "category": "development",
+      "price": 2500,
+      "date": "2025-11-20",
+      "status": "published",
+      "description": "Кросплатформний мобільний додаток для iOS та Android з підпискою та push-сповіщеннями.",
+      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 8,
+      "title": "Розробка логотипу та брендбуку",
+      "category": "design",
+      "price": 500,
+      "date": "2026-01-30",
+      "status": "published",
+      "description": "Створення унікального фірмового стилю: логотип, кольори, типографіка та правила використання.",
+      "image": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 9,
+      "title": "Email-маркетинг стратегія",
+      "category": "marketing",
+      "price": 350,
+      "date": "2026-02-05",
+      "status": "published",
+      "description": "Розробка ланцюжків листів для прогріву аудиторії, дизайн шаблонів та аналітика розсилок.",
+      "image": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 10,
+      "title": "Міграція на нову CMS",
+      "category": "development",
+      "price": 800,
+      "date": "2026-03-15",
+      "status": "published",
+      "description": "Безпечне перенесення сайту на сучасну систему управління контентом без втрат позицій SEO.",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 11,
+      "title": "Дизайн презентації для інвесторів",
+      "category": "design",
+      "price": 250,
+      "date": "2026-04-18",
+      "status": "published",
+      "description": "Стильне оформлення пітч-деку, яке допоможе продати вашу ідею на мільйон.",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 12,
+      "title": "Налаштування Google Analytics 4",
+      "category": "marketing",
+      "price": 323,
+      "date": "2026-02-28",
+      "status": "published",
+      "description": "Правильне налаштування відстеження подій, конверсій та інтеграція з Google Ads.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+    }
+  ]
+}

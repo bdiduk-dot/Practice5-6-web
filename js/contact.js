@@ -1,4 +1,4 @@
-﻿function initContact() {
+function initContact() {
   const form = document.getElementById('contact-form');
   if (!form) {
     return;
@@ -220,7 +220,7 @@
     try {
       localStorage.setItem(draftKey, JSON.stringify(draftData));
     } catch (_error) {
-      // Ignore storage errors.
+      // Ігноруємо помилки доступу до сховища
     }
   }
 
@@ -259,7 +259,7 @@
     try {
       localStorage.removeItem(draftKey);
     } catch (_error) {
-      // Ignore storage errors.
+      // Ігноруємо помилки доступу до сховища
     }
   }
 

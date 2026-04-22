@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', init);
 
 function init() {
   initActiveNav();
@@ -196,7 +196,7 @@ function initThemeToggle() {
     try {
       localStorage.setItem(storageKey, nextTheme);
     } catch (_error) {
-      // localStorage may be unavailable in private mode or restricted environments.
+      // localStorage може бути недоступним у приватному режимі або обмежених середовищах.
     }
   });
 }
